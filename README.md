@@ -44,3 +44,20 @@
 💬 Comment
 
 ● Tạo / Xóa / Sửa comment
+
+📬 Postman Collection
+
+📥 Postman Link: Social Media API Postman Collection
+
+📦 Bao gồm: Auth, User, Post, Comment, Upload, Follow, Like...
+
+🧪 Testing
+
+Viết test bằng Jest và Supertest
+
+Chạy test:
+npm test
+
+🌐 Deployment
+
+Đã được deploy tại: https://social-media-backend-m51o.onrender.com/
