@@ -144,10 +144,10 @@ userRouter.get("/users/me/followers", auth, async (req, res) => {
 userRouter.post(
   "/users/me/avatar",
   auth,
-  upload.single("avatars"),
+  upload.single("image"),
   async (req, res) => {
     const buffer = await sharp(req.file.buffer).resize({width:250,height:250}).png().toBuffer()
-    res.user.avatar = buffer
+    req.user.avatar = buffer
     await req.user.save();
     res.status(200).send();
   },
